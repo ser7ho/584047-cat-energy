@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Пичугин](https://up.htmlacademy.ru/adaptive/14/user/584047).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Лоскутова](https://up.htmlacademy.ru/adaptive/14/user/33515).
 
 ---
 
