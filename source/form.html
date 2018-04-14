@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <a href="index.html"> <img class="page-header__logo" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип"></a>
+      <a href="index.html"> <img class="page-header__logo-name logo-name" src="http://placehold.it/101x18" width="101" height="18" alt="Название магазина «Кэт энерджи»"></a>
+      <nav class="main-nav">
+        <button class="main-nav__menu" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--current"><a>Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <h1 class="page-main__title">Подбор программы</h1>
+
+      <section class="profile">
+        <h2 class="visually-hidden">Анкета</h2>
+        <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="profile__info">
+            <label class="profile__label" for="profile__name">Имя:<sup>*</sup></label>
+            <input class="profile__input--name profile__input" type="text" name="name" id="profile__name" value="" placeholder="Барсик" required>
+            <label class="profile__label" for="profile__weight">Вес (кг):<sup>*</sup></label>
+            <input class="profile__input--weight profile__input" type="number" name="weight" id="profile__weight" value="" placeholder="7" required>
+            <label class="profile__label" for="profile__age">Возраст (лет):</label>
+            <input class="profile__input--age profile__input" type="number" name="age" id="profile__age" value="" placeholder="7">
+          </fieldset>
+          <fieldset class="profile__goal goal">
+            <ul class="goal__list">
+              <li class="goal__option">
+                <input class="visually-hidden goal__radio" type="radio" name="goal" value="slim" id="goal__slim" checked>
+                <label class="profile__label" for="goal__slim">Похудение</label>
+              </li>
+              <li class="goal__option">
+                <input class="visually-hidden goal__radio" type="radio" name="goal" value="pro" id="goal__pro">
+                <label class="profile__label" for="goal__pro">Набор массы</label>
+              </li>
+              <li class="goal__option">
+                <input class="visually-hidden goal__radio" type="radio" name="goal" value="unknown" id="goal__unknown">
+                <label class="profile__label" for="goal__unknown">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="profile__contacts">
+            <h3 class="profile__title">Контактные данные (вдадельца кота)</h3>
+            <label class="profile__label" for="profile__email">e-mail:<sup>*</sup></label>
+            <input class="profile__email" type="email" name="profile__email" id="profile__email" value="" placeholder="kuklachev@gmail.com" required>
+            <label class="profile__label" for="profile__phone-number">Телефон:<sup>*</sup></label>
+            <input class="profile__phone-number" type="tel" name="profile__phone-number" id="profile__phone-number" value="" placeholder="8(960)900-60-90" required>
+          </fieldset>
+          <fieldset class="profile__comment comment">
+            <h3 class="profile__title">Комментарий</h3>
+            <label class="visually-hidden" for="comment__message">Комментарий</label>
+            <textarea class="profile__input comment__input" id="comment__message" name="comment__message" placeholder="расскажите обо всех повадках кота" rows="4"></textarea>
+          </fieldset>
+          <fieldset class="profile__addition addition">
+            <ul class="addition__list">
+              <li class="addition__option">
+                <input class="visually-hidden" type="checkbox" name="addition__sweetener" id="addition__sweetener" checked>
+                <label class="profile__label" for="addition__sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="addition__option">
+                <input class="visually-hidden" type="checkbox" name="addition__water" id="addition__water">
+                <label class="profile__label" for="addition__water">Питьевая вода</label>
+              </li>
+              <li class="addition__option">
+                <input class="visually-hidden" type="checkbox" name="addition__milk" id="addition__milk">
+                <label class="profile__label" for="addition__milk">Молоко</label>
+              </li>
+              <li class="addition__option">
+                <input class="visually-hidden" type="checkbox" name="addition__vitamins" id="addition__vitamins">
+                <label class="profile__label" for="addition__vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <span class="form__footnote"><sup>*</sup>— Обязательные поля</span>
+        </form>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+
+    <div class="container">
+      <section class="contacts">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__address">
+          ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
+        </p>
+      </section>
+    </div>
+
+    <div class="map"></div>
+    <div class="page-footer__wrapper">
+      <div class="container">
+        <img class="page-footer__logo-name logo-name" src="http://placehold.it/128x24" width="128" height="24" alt="Название магазина «Кэт энерджи»">
+        <div class="social">
+          <ul class="social-list">
+            <li><a class="social-btn vk-btn" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-btn insta-btn" href="#" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a class="social-btn fb-btn" href="#" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
