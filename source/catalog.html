@@ -9,8 +9,10 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <a href="index.html"> <img class="page-header__logo" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип"></a>
-      <a href="index.html"> <img class="page-header__logo-name logo-name" src="http://placehold.it/101x18" width="101" height="18" alt="Название магазина «Кэт энерджи»"></a>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="index.html"> <img class="page-header__logo-picture" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип"></a>
+        <a class="page-header__logo" href="index.html"> <img class="page-header__logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Название магазина «Кэт энерджи»"></a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__menu" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -33,7 +35,7 @@
           <li class="goods__item">
             <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
-              <a href="#"><h3 class="goods__title">cat energy<br>pro 500 г</h3></a>
+              <a class="goods__title" href="#">cat energy<br>pro 500 г</a>
               <table class="goods__info">
                 <tr class="goods__row">
                   <td class="goods__col-1">Объем</td>
@@ -54,7 +56,7 @@
           <li class="goods__item">
             <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
-              <a href="#"><h3 class="goods__title">cat energy<br>pro 1000 г</h3></a>
+              <a class="goods__title" href="#">cat energy<br>pro 1000 г</a>
               <table class="goods__info">
                 <tr class="goods__row">
                   <td class="goods__col-1">Объем</td>
@@ -75,7 +77,7 @@
           <li class="goods__item">
             <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
-              <a href="#"><h3 class="goods__title">cat energy<br>pro 500 г</h3></a>
+              <a class="goods__title" href="#">cat energy<br>pro 500 г</a>
               <table class="goods__info">
                 <tr class="goods__row">
                   <td class="goods__col-1">Объем</td>
@@ -96,7 +98,7 @@
           <li class="goods__item">
             <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
-              <a href="#"><h3 class="goods__title">cat energy<br>pro 1000 г</h3></a>
+              <a class="goods__title" href="#">cat energy<br>pro 1000 г</a>
               <table class="goods__info">
                 <tr class="goods__row">
                   <td class="goods__col-1">Объем</td>
@@ -117,7 +119,7 @@
           <li class="goods__item">
             <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
-              <a href="#"><h3 class="goods__title">cat energy<br>slim 500 г</h3></a>
+              <a class="goods__title" href="#">cat energy<br>slim 500 г</a>
               <table class="goods__info">
                 <tr class="goods__row">
                   <td class="goods__col-1">Объем</td>
@@ -138,7 +140,7 @@
           <li class="goods__item">
             <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
-              <a href="#"><h3 class="goods__title">cat energy<br>slim 1000 г</h3></a>
+              <a class="goods__title" href="#">cat energy<br>slim 1000 г</a>
               <table class="goods__info">
                 <tr class="goods__row">
                   <td class="goods__col-1">Объем</td>
@@ -159,7 +161,7 @@
           <li class="goods__item">
             <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
-              <a href="#"><h3 class="goods__title">cat energy<br>slim 500 г</h3></a>
+              <a class="goods__title" href="#">cat energy<br>slim 500 г</a>
               <table class="goods__info">
                 <tr class="goods__row">
                   <td class="goods__col-1">Объем</td>
@@ -181,7 +183,7 @@
             <a class="goods__link" href="#"></a>
             <a href="#"><h3 class="goods__title">Показать еще 100500 товаров</h3></a>
             <p class="goods__text">На самом деле вкусов еще больше!</p>
-            <a class="goods__button--more button" href="#">Показать все</a>
+            <a class="goods__button goods__button--more button" href="#">Показать все</a>
           </li>
         </ul>
       </section>
@@ -191,63 +193,69 @@
         <ul class="addition-goods__list">
           <li class="addition-item">
             <h3 class="addition-item__title">Сахарозаменитель</h3>
-            <span class="addition-item__count">1 упаковка (100 г)</span>
-            <span class="addition-item__price">100 р</span>
+            <div class="addition-item__wrapper">
+              <span class="addition-item__count">1 упаковка (100 г)</span>
+              <span class="addition-item__price">100 р</span>
+            </div>
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="addition-item">
             <h3 class="addition-item__title">Питьевая вода</h3>
-            <span class="addition-item__count">5 литров</span>
-            <span class="addition-item__price">50 р</span>
+            <div class="addition-item__wrapper">
+              <span class="addition-item__count">5 литров</span>
+              <span class="addition-item__price">50 р</span>
+            </div>
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="addition-item">
             <h3 class="addition-item__title">Молоко</h3>
-            <span class="addition-item__count">1 литр</span>
-            <span class="addition-item__price">100 р</span>
+            <div class="addition-item__wrapper">
+              <span class="addition-item__count">1 литр</span>
+              <span class="addition-item__price">100 р</span>
+            </div>
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="addition-item">
             <h3 class="addition-item__title">Витамины</h3>
-            <span class="addition-item__count">1 упаковка (30 г)</span>
-            <span class="addition-item__price">300 р</span>
+            <div class="addition-item__wrapper">
+              <span class="addition-item__count">1 упаковка (30 г)</span>
+              <span class="addition-item__price">300 р</span>
+            </div>
             <a class="goods__button button" href="#">Заказать</a>
           </li>
         </ul>
       </section>
       <div class="present">
+        <span class="present__icon"></span>
         <p class="present__text">закажите все<br>и получите чехол для кота в подарок!</p>
       </div>
     </div>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__address">
+          ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
+        </p>
+      </div>
+      <div class="contacts__map"></div>
+    </section>
 
   </main>
 
   <footer class="page-footer">
 
     <div class="container">
-      <section class="contacts">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__address">
-          ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
-        </p>
-      </section>
-    </div>
-
-    <div class="map"></div>
-    <div class="page-footer__wrapper">
-      <div class="container">
-        <img class="page-footer__logo-name logo-name" src="http://placehold.it/128x24" width="128" height="24" alt="Название магазина «Кэт энерджи»">
-        <div class="social">
-          <ul class="social-list">
-            <li><a class="social-btn vk-btn" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li><a class="social-btn insta-btn" href="#" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li><a class="social-btn fb-btn" href="#" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+      <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-text" src="http://placehold.it/128x24" width="128" height="24" alt="Название магазина «Кэт энерджи»"></a>
+      <div class="social">
+        <ul class="social__list">
+          <li><a class="social__button social__button--vk" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social__button social__button--insta" href="#" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social__button social__button--fb" href="#" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">HTML Academy:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
 
