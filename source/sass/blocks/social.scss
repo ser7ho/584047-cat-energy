@@ -1,0 +1,25 @@
+.social__list {
+  @include resetList;
+}
+
+.social__button {
+  display: block;
+  background: no-repeat 50% 50%;
+  &--vk {
+    width: 22px;
+    height: 12px;
+    background-image: url("../../img/icon-vk-mobile.svg");
+  }
+
+  &--insta {
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/icon-insta-mobile.svg");
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+    background-image: url("../../img/icon-fb-mobile.svg");
+  }
+}

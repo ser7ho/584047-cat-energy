@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="container">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo" href="index.html"> <img class="page-header__logo-picture" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип"></a>
-        <a class="page-header__logo" href="index.html"> <img class="page-header__logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Название магазина «Кэт энерджи»"></a>
+      <div class="page-header__logo">
+        <a class="page-header__logo-picture" href="index.html"><img class="page-header__logo-picture" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип"></a>
       </div>
       <nav class="main-nav">
         <button class="main-nav__menu" type="button">Открыть меню</button>
@@ -33,7 +33,7 @@
         <h2 class="visually-hidden">Товары</h2>
         <ul class="catalog__list goods">
           <li class="goods__item">
-            <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
+            <a class="goods__link" href="#"><img class="goods__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
               <a class="goods__title" href="#">cat energy<br>pro 500 г</a>
               <table class="goods__info">
@@ -54,7 +54,7 @@
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
+            <a class="goods__link" href="#"><img class="goods__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
               <a class="goods__title" href="#">cat energy<br>pro 1000 г</a>
               <table class="goods__info">
@@ -75,7 +75,7 @@
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
+            <a class="goods__link" href="#"><img class="goods__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
               <a class="goods__title" href="#">cat energy<br>pro 500 г</a>
               <table class="goods__info">
@@ -96,7 +96,7 @@
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
+            <a class="goods__link" href="#"><img class="goods__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
               <a class="goods__title" href="#">cat energy<br>pro 1000 г</a>
               <table class="goods__info">
@@ -117,7 +117,7 @@
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
+            <a class="goods__link" href="#"><img class="goods__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
               <a class="goods__title" href="#">cat energy<br>slim 500 г</a>
               <table class="goods__info">
@@ -138,7 +138,7 @@
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
+            <a class="goods__link" href="#"><img class="goods__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
               <a class="goods__title" href="#">cat energy<br>slim 1000 г</a>
               <table class="goods__info">
@@ -159,7 +159,7 @@
             <a class="goods__button button" href="#">Заказать</a>
           </li>
           <li class="goods__item">
-            <a class="goods__link" href="#"><img class="goods__image" src="http://placehold.it/140x144" width="140" height="144" alt="Товар"></a>
+            <a class="goods__link" href="#"><img class="goods__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Товар"></a>
             <div class="goods__description">
               <a class="goods__title" href="#">cat energy<br>slim 500 г</a>
               <table class="goods__info">
@@ -230,14 +230,15 @@
         <p class="present__text">закажите все<br>и получите чехол для кота в подарок!</p>
       </div>
     </div>
-    <section class="contacts">
+    <section class="contacts contacts--inner">
       <div class="container">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="contacts__address">
           ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
         </p>
       </div>
-      <div class="contacts__map"></div>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177649!2d30.320889251744543!3d59.93879686895887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522059255714"
+      width="320" height="400" style="border:0" allowfullscreen></iframe>
     </section>
 
   </main>
@@ -245,7 +246,7 @@
   <footer class="page-footer">
 
     <div class="container">
-      <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-text" src="http://placehold.it/128x24" width="128" height="24" alt="Название магазина «Кэт энерджи»"></a>
+      <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Название магазина «Кэт энерджи»"></a>
       <div class="social">
         <ul class="social__list">
           <li><a class="social__button social__button--vk" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>

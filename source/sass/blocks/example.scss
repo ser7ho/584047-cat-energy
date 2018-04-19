@@ -1,0 +1,7 @@
+.example {
+  background-color: $secondColor;
+}
+
+.example__list {
+  @include resetList;
+}

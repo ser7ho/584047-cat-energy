@@ -1,0 +1,7 @@
+$mainColor: #68b738;
+$secondColor: #f2f2f2;
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
