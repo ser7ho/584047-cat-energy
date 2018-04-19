@@ -1,3 +1,28 @@
 .goods {
   @include resetList;
 }
+
+.goods__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.goods__info {
+  @include text(12px, 16px);
+}
+
+.goods__text {
+  @include text(12px, 16px);
+}
+
+.goods__button {
+  font-size: 16px;
+  line-height: 20px;
+  &--more {
+    background-color: $secondColor;
+    color: #444;
+  }
+}

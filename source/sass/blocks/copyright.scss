@@ -4,3 +4,7 @@
   height: 34px;
   background: url("../../img/htmlacademy.svg") no-repeat 0 0;
 }
+
+.copyright__text {
+  @include text(16px, 16px);
+}

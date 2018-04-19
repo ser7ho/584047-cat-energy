@@ -5,3 +5,7 @@
 .example__list {
   @include resetList;
 }
+
+.example__text {
+  @include text;
+}

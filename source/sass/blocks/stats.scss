@@ -1,0 +1,30 @@
+.stats {
+  @include resetList;
+}
+
+.stats__item {
+  position: relative;
+  width: 122px;
+  height: 54px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+}
+
+.stats__text {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.stats__legend {
+  @include text(12px, 12px);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 15px;
+  position: absolute;
+  left: 18px;
+  top: 33px;
+  width: 87px;
+  background-color: $secondColor;
+}

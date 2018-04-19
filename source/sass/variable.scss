@@ -1,5 +1,12 @@
 $mainColor: #68b738;
 $secondColor: #f2f2f2;
+
+@mixin text ($fontSize: 14px, $lineHeight: 18px) {
+  font-family: Arial, sans-serif;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: #444;
+}
 @mixin resetList {
   margin: 0;
   padding: 0;

@@ -7,3 +7,14 @@
 .contacts--inner {
   background: $secondColor;
 }
+
+.contacts__address {
+  @include text(14px, 20px);
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
