@@ -9,3 +9,17 @@
 .example__text {
   @include text;
 }
+
+.example__info {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0 44px;
+}
+
+.example__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

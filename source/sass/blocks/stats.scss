@@ -1,5 +1,7 @@
 .stats {
   @include resetList;
+  display: flex;
+  justify-content: space-between;
 }
 
 .stats__item {

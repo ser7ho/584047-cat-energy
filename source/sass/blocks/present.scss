@@ -1,4 +1,5 @@
 .present {
+  margin: 32px 0;
   width: 280px;
   height: 289px;
   background: $mainColor url("../../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
@@ -6,12 +7,17 @@
 
 .present__icon {
   display: block;
+  margin: 0 auto;
+  padding: 65px 0;
   width: 55px;
   height: 60px;
-  background: url("../../img/icon-gift.svg") no-repeat 0 0;
+  background: url("../../img/icon-gift.svg") no-repeat 0 65px;
 }
 
 .present__text {
+  width: 170px;
+  margin: 0 auto;
   @include text(16px, 20px);
   color: #fff;
+  text-align: center;
 }

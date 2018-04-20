@@ -3,12 +3,16 @@
 }
 
 .addition-goods__title {
+  margin: 0;
+  padding: 32px 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .addition-goods__item-title {
+  margin: 0;
+  padding: 0 0 15px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -16,5 +20,12 @@
 }
 
 .addition-goods__wrapper {
+  padding: 0 0 15px;
   @include text(14px, 14px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.addition-goods__item {
+  padding: 14px 0 17px;
 }

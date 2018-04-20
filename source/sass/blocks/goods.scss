@@ -3,19 +3,40 @@
 }
 
 .goods__title {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 10px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #111;
   text-transform: uppercase;
+  &--more {
+    padding: 0 0 5px;
+    text-align: center;
+  }
 }
 
 .goods__info {
+  width: 100%;
   @include text(12px, 16px);
+  border-collapse: collapse;
+
+}
+
+.goods__col-1 {
+  text-align: left;
+}
+
+.goods__col-2 {
+  text-align: right;
 }
 
 .goods__text {
+  margin: 0;
+  padding: 0 0 15px;
   @include text(12px, 16px);
+  text-align: center;
 }
 
 .goods__button {
@@ -25,4 +46,29 @@
     background-color: $secondColor;
     color: #444;
   }
+}
+
+.goods__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 0 24px;
+}
+
+.goods__item-more {
+  padding: 0 0 24px;
+}
+
+.goods__description {
+  width: 140px;
+}
+
+.goods__icon-more {
+  margin: 0 auto;
+  padding: 26px 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../../img/icon-plus-mobile.svg") no-repeat 0 26px;
 }

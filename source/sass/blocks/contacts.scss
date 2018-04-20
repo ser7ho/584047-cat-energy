@@ -1,7 +1,7 @@
 .contacts__map {
   width: 100%;
   min-width: 320px;
-  height: 400px;
+  height: 360px;
 }
 
 .contacts--inner {
@@ -9,12 +9,24 @@
 }
 
 .contacts__address {
+  margin: 0;
+  width: 140px;
   @include text(14px, 20px);
 }
 
 .contacts__title {
+  margin: 0;
+  width: 130px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.contacts__wrapper {
+  margin: 0 auto;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

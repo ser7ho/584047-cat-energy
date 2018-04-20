@@ -1,7 +1,9 @@
 .button {
   display: block;
+  box-sizing: border-box;
   width: 280px;
   height: 40px;
+  padding: 11px 0;
   background-color: $mainColor;
   border-style: none;
   color: #fff;

@@ -1,5 +1,15 @@
+.social {
+  width: 280px;
+  padding: 21px 0;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+}
+
 .social__list {
   @include resetList;
+  width: 128px;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__button {
