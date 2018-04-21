@@ -1,4 +1,3 @@
-
 .addition-goods__list {
   @include resetList;
 }
@@ -10,7 +9,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #ffffff;
 
   &::after {
     content: "";
@@ -40,6 +39,7 @@
 
 .addition-goods__wrapper {
   padding: 0 0 15px;
+  
   @include text(14px, 14px);
   display: flex;
   justify-content: space-between;

@@ -16,7 +16,8 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #ffffff;
+
   &::after {
     content: "";
     position: absolute;
@@ -38,9 +39,10 @@
   padding: 0 15px 0 0;
   font-size: 16px;
   line-height: 18px;
-  color: #222;
+  color: #222222;
   text-transform: uppercase;
   flex-shrink: 0;
+
   &--option {
     padding: 0 0 0 45px;
     display: block;
@@ -54,8 +56,9 @@
   height: 45px;
   font-size: 16px;
   line-height: 18px;
-  color: #444;
+  color: #444444;
   text-transform: uppercase;
+
   &--comment {
     height: 150px;
     padding: 13px;
@@ -67,7 +70,7 @@
   display: block;
   font-size: 14px;
   line-height: 16px;
-  color: #444;
+  color: #444444;
   text-align: center;
 }
 
@@ -80,9 +83,11 @@
 .profile__list {
   @include resetList;
   margin: 20px 0;
+
   &--contacts {
     margin: 40px 0 0;
   }
+
   &--add {
     margin: 44px 0;
   }

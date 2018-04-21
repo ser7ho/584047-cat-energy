@@ -9,8 +9,9 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #111;
+  color: #111111;
   text-transform: uppercase;
+
   &--more {
     padding: 0 0 5px;
     text-align: center;
@@ -19,9 +20,9 @@
 
 .goods__info {
   width: 100%;
+
   @include text(12px, 16px);
   border-collapse: collapse;
-
 }
 
 .goods__col-1 {
@@ -35,6 +36,7 @@
 .goods__text {
   margin: 0;
   padding: 0 0 15px;
+
   @include text(12px, 16px);
   text-align: center;
 }
@@ -42,9 +44,10 @@
 .goods__button {
   font-size: 16px;
   line-height: 20px;
+
   &--more {
     background-color: $secondColor;
-    color: #444;
+    color: #444444;
   }
 }
 
