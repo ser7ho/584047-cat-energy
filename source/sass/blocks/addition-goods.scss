@@ -1,3 +1,4 @@
+
 .addition-goods__list {
   @include resetList;
 }
@@ -10,6 +11,7 @@
   line-height: 24px;
   font-weight: 400;
   background-color: #fff;
+
   &::after {
     content: "";
     position: absolute;

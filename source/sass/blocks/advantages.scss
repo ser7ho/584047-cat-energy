@@ -1,5 +1,5 @@
 .advantages__list {
-  @include resetList;
+  @include resetList();
 }
 
 .advantages__item {
