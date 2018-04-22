@@ -13,14 +13,16 @@
 }
 
 .stats__text {
+  margin: 0;
+  padding: 10px 0;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  margin: 0;
 }
 
 .stats__legend {
   @include text(12px, 12px);
+  text-transform: lowercase;
   box-sizing: border-box;
   text-align: center;
   padding: 0 15px;

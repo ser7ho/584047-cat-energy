@@ -78,6 +78,27 @@
   margin: 0;
   padding: 0;
   border: none;
+  position: relative;
+
+  &--goal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #ededed;
+  }
+
+  &--goal::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #ededed;
+  }
 }
 
 .profile__list {

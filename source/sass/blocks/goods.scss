@@ -52,15 +52,47 @@
 }
 
 .goods__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 0 0 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    top: -1px;
+    left: -20px;
+    background-color: #ededed;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    bottom: 0;
+    left: -20px;
+    background-color: #ededed;
+  }
 }
 
 .goods__item-more {
   padding: 0 0 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    bottom: 0;
+    left: -20px;
+    background-color: #ededed;
+  }
 }
 
 .goods__description {

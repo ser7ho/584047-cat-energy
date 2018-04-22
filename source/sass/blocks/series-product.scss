@@ -19,7 +19,6 @@
 }
 
 .series-product__icon {
-  // margin: 25px 20px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -69,8 +68,8 @@
 
 .series-product__text {
   @include text;
-  margin: 0;
-  padding: 0 20px 23px;
+  margin: 0 20px;
+  padding: 0 0 23px;
   border-bottom: 1px solid rgba(68, 68, 68, 0.1);
 }
 
