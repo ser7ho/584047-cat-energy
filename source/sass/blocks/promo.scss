@@ -1,3 +1,9 @@
+.promo {
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 0 135px;
+}
+
 .promo__wrapper {
   min-height: 305px;
   position: relative;
@@ -7,12 +13,6 @@
 .promo__image {
   position: absolute;
   top: 167px;
-}
-
-.promo {
-  color: #ffffff;
-  font-weight: 400;
-  margin: 0 0 135px;
 }
 
 .promo__title {
