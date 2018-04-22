@@ -33,86 +33,86 @@
 
       <section class="profile">
         <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="profile__fieldset profile__fieldset--cat-info">
-            <ul class="profile__list">
-              <li class="profile__item">
-                <label class="profile__label" for="profile__name">Имя:<sup>*</sup></label>
-                <input class="profile__input" type="text" name="name" id="profile__name" value="" placeholder="Барсик" required>
+        <form class="questionary" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="questionary__fieldset questionary__fieldset--cat-info">
+            <ul class="questionary__list">
+              <li class="questionary__item">
+                <label class="questionary__label" for="questionary__name">Имя:<sup>*</sup></label>
+                <input class="questionary__input" type="text" name="name" id="questionary__name" value="" placeholder="Барсик" required>
               </li>
-              <li class="profile__item">
-                <label class="profile__label" for="profile__weight">Вес (кг):<sup>*</sup></label>
-                <input class="profile__input" type="number" name="weight" id="profile__weight" value="" placeholder="7" required>
+              <li class="questionary__item">
+                <label class="questionary__label" for="questionary__weight">Вес (кг):<sup>*</sup></label>
+                <input class="questionary__input" type="number" name="weight" id="questionary__weight" value="" placeholder="7" required>
               </li>
-              <li class="profile__item">
-                <label class="profile__label" for="profile__age">Возраст (лет):</label>
-                <input class="profile__input" type="number" name="age" id="profile__age" value="" placeholder="7">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="profile__fieldset profile__fieldset--goal">
-            <ul class="profile__list">
-              <li class="profile__option">
-                <input class="visually-hidden profile__radio" type="radio" name="profile" value="slim" id="profile__slim" checked>
-                <label class="profile__label profile__label--option" for="profile__slim">Похудение</label>
-              </li>
-              <li class="profile__option">
-                <input class="visually-hidden profile__radio" type="radio" name="profile" value="pro" id="profile__pro">
-                <label class="profile__label profile__label--option" for="profile__pro">Набор массы</label>
-              </li>
-              <li class="profile__option">
-                <input class="visually-hidden profile__radio" type="radio" name="profile" value="unknown" id="profile__unknown">
-                <label class="profile__label profile__label--option" for="profile__unknown">Не знаю (нужен ваш совет)</label>
+              <li class="questionary__item">
+                <label class="questionary__label" for="questionary__age">Возраст (лет):</label>
+                <input class="questionary__input" type="number" name="age" id="questionary__age" value="" placeholder="7">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="profile__fieldset owner-contacts">
-            <div class="profile__title-wrapper">
-            <h3 class="profile__title">Контактные данные (вдадельца кота)</h3>
+          <fieldset class="questionary__fieldset questionary__fieldset--goal">
+            <ul class="questionary__list">
+              <li class="questionary__option">
+                <input class="visually-hidden questionary__radio" type="radio" name="profile" value="slim" id="questionary__slim" checked>
+                <label class="questionary__label questionary__label--option" for="questionary__slim">Похудение</label>
+              </li>
+              <li class="questionary__option">
+                <input class="visually-hidden questionary__radio" type="radio" name="profile" value="pro" id="questionary__pro">
+                <label class="questionary__label questionary__label--option" for="questionary__pro">Набор массы</label>
+              </li>
+              <li class="questionary__option">
+                <input class="visually-hidden questionary__radio" type="radio" name="profile" value="unknown" id="questionary__unknown">
+                <label class="questionary__label questionary__label--option" for="questionary__unknown">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="questionary__fieldset">
+            <div class="questionary__title-wrapper">
+            <h3 class="questionary__title">Контактные данные (вдадельца кота)</h3>
           </div>
-            <ul class="profile__list profile__list--contacts">
-              <li class="profile__item">
-                <label class="profile__label" for="profile__email">e-mail:<sup>*</sup></label>
-                <input class="profile__input profile__input--email" type="email" name="profile__email" id="profile__email" value="" placeholder="kuklachev@gmail.com" required>
+            <ul class="questionary__list questionary__list--contacts">
+              <li class="questionary__item">
+                <label class="questionary__label" for="questionary__email">e-mail:<sup>*</sup></label>
+                <input class="questionary__input questionary__input--email" type="email" name="questionary__email" id="questionary__email" value="" placeholder="kuklachev@gmail.com" required>
               </li>
-              <li class="profile__item">
-                <label class="profile__label" for="profile__phone-number">Телефон:<sup>*</sup></label>
-                <input class="profile__input profile__input--phone-number" type="tel" name="profile__phone-number" id="profile__phone-number" value="" placeholder="8(960)900-60-90" required>
+              <li class="questionary__item">
+                <label class="questionary__label" for="questionary__phone-number">Телефон:<sup>*</sup></label>
+                <input class="questionary__input questionary__input--phone-number" type="tel" name="questionary__phone-number" id="questionary__phone-number" value="" placeholder="8(960)900-60-90" required>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="profile__fieldset comment">
-            <div class="profile__title-wrapper">
-            <h3 class="profile__title">Комментарий</h3>
+          <fieldset class="questionary__fieldset">
+            <div class="questionary__title-wrapper">
+            <h3 class="questionary__title">Комментарий</h3>
           </div>
             <label class="visually-hidden" for="comment__message">Комментарий</label>
-            <textarea class="profile__input profile__input--comment" id="comment__message" name="comment__message" placeholder="расскажите обо всех повадках кота" rows="4"></textarea>
+            <textarea class="questionary__input questionary__input--comment" id="comment__message" name="comment__message" placeholder="расскажите обо всех повадках кота" rows="4"></textarea>
           </fieldset>
-          <fieldset class="profile__fieldset profile">
-            <div class="profile__title-wrapper">
-            <h3 class="profile__title">Дополнительно</h3>
+          <fieldset class="questionary__fieldset profile">
+            <div class="questionary__title-wrapper">
+            <h3 class="questionary__title">Дополнительно</h3>
           </div>
-            <ul class="profile__list profile__list--add">
-              <li class="profile__option">
-                <input class="visually-hidden" type="checkbox" name="profile__sweetener" id="profile__sweetener" checked>
-                <label class="profile__label profile__label--option" for="profile__sweetener">Сахарозаменитель</label>
+            <ul class="questionary__list questionary__list--add">
+              <li class="questionary__option">
+                <input class="visually-hidden" type="checkbox" name="questionary__sweetener" id="questionary__sweetener" checked>
+                <label class="questionary__label questionary__label--option" for="questionary__sweetener">Сахарозаменитель</label>
               </li>
-              <li class="profile__option">
-                <input class="visually-hidden" type="checkbox" name="profile__water" id="profile__water">
-                <label class="profile__label profile__label--option" for="profile__water">Питьевая вода</label>
+              <li class="questionary__option">
+                <input class="visually-hidden" type="checkbox" name="questionary__water" id="questionary__water">
+                <label class="questionary__label questionary__label--option" for="questionary__water">Питьевая вода</label>
               </li>
-              <li class="profile__option">
-                <input class="visually-hidden" type="checkbox" name="profile__milk" id="profile__milk">
-                <label class="profile__label profile__label--option" for="profile__milk">Молоко</label>
+              <li class="questionary__option">
+                <input class="visually-hidden" type="checkbox" name="questionary__milk" id="questionary__milk">
+                <label class="questionary__label questionary__label--option" for="questionary__milk">Молоко</label>
               </li>
-              <li class="profile__option">
-                <input class="visually-hidden" type="checkbox" name="profile__vitamins" id="profile__vitamins">
-                <label class="profile__label profile__label--option" for="profile__vitamins">Витамины</label>
+              <li class="questionary__option">
+                <input class="visually-hidden" type="checkbox" name="questionary__vitamins" id="questionary__vitamins">
+                <label class="questionary__label questionary__label--option" for="questionary__vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
-          <button class="profile__button button" type="submit">Отправить заявку</button>
-          <span class="profile__footnote"><sup>*</sup>— Обязательные поля</span>
+          <button class="questionary__button button" type="submit">Отправить заявку</button>
+          <span class="questionary__footnote"><sup>*</sup>— Обязательные поля</span>
         </form>
       </section>
     </div>

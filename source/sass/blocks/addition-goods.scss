@@ -27,25 +27,3 @@
 .addition-goods__title-wrapper {
   display: inline-block;
 }
-
-.addition-goods__item-title {
-  margin: 0;
-  padding: 0 0 15px;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.addition-goods__wrapper {
-  padding: 0 0 15px;
-
-  @include text(14px, 14px);
-  display: flex;
-  justify-content: space-between;
-}
-
-.addition-goods__item {
-  padding: 14px 0 17px;
-  border-bottom: 1px solid #cdcdcd;
-}

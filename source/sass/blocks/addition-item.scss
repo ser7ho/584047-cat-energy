@@ -1,0 +1,21 @@
+.addition-item {
+  padding: 14px 0 17px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.addition-item__title {
+  margin: 0;
+  padding: 0 0 15px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.addition-item__wrapper {
+  padding: 0 0 15px;
+
+  @include text(14px, 14px);
+  display: flex;
+  justify-content: space-between;
+}
