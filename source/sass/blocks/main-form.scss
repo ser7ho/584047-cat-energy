@@ -1,4 +1,4 @@
-.questionary__title {
+.main-form__title {
   display: block;
   max-width: 182px;
   margin: 25px 0 20px;
@@ -23,11 +23,11 @@
   }
 }
 
-.questionary__title-wrapper {
+.main-form__title-wrapper {
   display: inline-block;
 }
 
-.questionary__label {
+.main-form__label {
   padding: 0 15px 0 0;
   font-size: 16px;
   line-height: 18px;
@@ -41,7 +41,7 @@
   }
 }
 
-.questionary__input {
+.main-form__input {
   width: 100%;
   box-sizing: border-box;
   padding: 0 45px 0 15px;
@@ -57,7 +57,7 @@
   }
 }
 
-.questionary__footnote {
+.main-form__footnote {
   padding: 20px;
   display: block;
   font-size: 14px;
@@ -66,7 +66,7 @@
   text-align: center;
 }
 
-.questionary__fieldset {
+.main-form__fieldset {
   margin: 0;
   padding: 0;
   border: none;
@@ -93,7 +93,7 @@
   }
 }
 
-.questionary__list {
+.main-form__list {
   @include resetList;
   margin: 20px 0;
 
@@ -106,13 +106,13 @@
   }
 }
 
-.questionary__item {
+.main-form__item {
   margin: 14px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.questionary__option {
+.main-form__option {
   margin: 25px 0;
 }
