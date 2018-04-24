@@ -1,0 +1,28 @@
+.feature {
+  position: relative;
+  width: 122px;
+  height: 54px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+}
+
+.feature__text {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.feature__legend {
+  @include text(12px, 12px);
+  text-transform: lowercase;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 15px;
+  position: absolute;
+  left: 18px;
+  top: 33px;
+  width: 87px;
+  background-color: $secondColor;
+}

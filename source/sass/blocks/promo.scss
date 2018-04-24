@@ -1,0 +1,35 @@
+.promo {
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 0 135px;
+}
+
+.promo__wrapper {
+  min-height: 305px;
+  position: relative;
+  background: $mainColor url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
+}
+
+.promo__image {
+  position: absolute;
+  top: 167px;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  padding: 25px 0 0;
+  text-align: center;
+}
+
+.promo__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}

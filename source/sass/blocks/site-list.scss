@@ -1,0 +1,17 @@
+.site-list {
+  @include resetList;
+}
+
+.site-list__link {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.site-list__item {
+  padding: 22px 0;
+  border-top: 1px solid $secondColor;
+  text-align: center;
+}

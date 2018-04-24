@@ -1,0 +1,40 @@
+.advantages__list {
+  @include resetList();
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+}
+
+.advantages__icon {
+  width: 60px;
+  height: 60px;
+  margin: 10px 20px 10px 0;
+
+  &--safe {
+    background: $mainColor url("../img/advantage-leaf@1x.png") no-repeat 50% 50%;
+  }
+
+  &--fast {
+    background: $mainColor url("../img/advantage-powder@1x.png") no-repeat 50% 50%;
+  }
+
+  &--food {
+    background: $mainColor url("../img/advantage-dining@1x.png") no-repeat 50% 50%;
+  }
+
+  &--time {
+    background: $mainColor url("../img/advantage-clock@1x.png") no-repeat 50% 50%;
+  }
+}
+
+.advantages__text {
+  @include text;
+  margin: 0;
+  width: 200px;
+}
+
+.advantages__title {
+  margin: 0 0 20px;
+}

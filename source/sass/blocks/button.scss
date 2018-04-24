@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  padding: 11px 0;
+  background-color: $mainColor;
+  border-style: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
