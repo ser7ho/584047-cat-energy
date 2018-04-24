@@ -9,15 +9,12 @@
 
 <body>
 
-  <header class="page-header">
-    <div class="container page-header__top">
+  <div class="container">
+    <header class="page-header">
       <div class="page-header__logo">
         <a class="page-header__logo-picture" href="index.html"><img class="page-header__logo-picture" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип"></a>
       </div>
-      <div class="page-header__menu">
-        <button class="menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </div>
-      </div>
+      <button class="page-header__menu-button menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -27,7 +24,8 @@
           </ul>
         </div>
       </nav>
-  </header>
+    </header>
+  </div>
 
   <main class="page-main">
     <div class="container">
@@ -70,8 +68,8 @@
           </fieldset>
           <fieldset class="main-form__fieldset">
             <div class="main-form__title-wrapper">
-            <h3 class="main-form__title">Контактные данные (вдадельца кота)</h3>
-          </div>
+              <h3 class="main-form__title">Контактные данные (вдадельца кота)</h3>
+            </div>
             <ul class="main-form__list main-form__list--contacts">
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__email">e-mail:<sup>*</sup></label>
@@ -85,15 +83,15 @@
           </fieldset>
           <fieldset class="main-form__fieldset">
             <div class="main-form__title-wrapper">
-            <h3 class="main-form__title">Комментарий</h3>
-          </div>
+              <h3 class="main-form__title">Комментарий</h3>
+            </div>
             <label class="visually-hidden" for="comment__message">Комментарий</label>
             <textarea class="main-form__input main-form__input--comment" id="comment__message" name="comment__message" placeholder="расскажите обо всех повадках кота" rows="4"></textarea>
           </fieldset>
           <fieldset class="main-form__fieldset profile">
             <div class="main-form__title-wrapper">
-            <h3 class="main-form__title">Дополнительно</h3>
-          </div>
+              <h3 class="main-form__title">Дополнительно</h3>
+            </div>
             <ul class="main-form__list main-form__list--add">
               <li class="main-form__option">
                 <input class="visually-hidden" type="checkbox" name="main-form__sweetener" id="main-form__sweetener" checked>
@@ -126,7 +124,7 @@
         </p>
       </div>
       <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177649!2d30.320889251744543!3d59.93879686895887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522059255714"
-      width="320" height="400" style="border:0" allowfullscreen></iframe>
+        width="320" height="400" style="border:0" allowfullscreen></iframe>
     </section>
 
   </main>
@@ -143,7 +141,9 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><p class="copyright__text">HTML Academy:</p></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <p class="copyright__text">HTML Academy:</p>
+        </a>
         <a class="copyright__link copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>

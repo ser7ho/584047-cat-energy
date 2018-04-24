@@ -9,15 +9,12 @@
 
 <body class="page">
 
-  <header class="page-header">
-    <div class="container page-header__top">
+  <div class="container">
+    <header class="page-header">
       <div class="page-header__logo">
         <img class="page-header__logo-picture" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип">
       </div>
-      <div class="page-header__menu">
-        <button class="menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </div>
-      </div>
+      <button class="page-header__menu-button menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -27,8 +24,8 @@
           </ul>
         </div>
       </nav>
-
-  </header>
+    </header>
+  </div>
 
   <main class="page-main">
 
@@ -95,13 +92,13 @@
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
         <ul class="example__stats-list">
-          <li class="example__stats-item field">
-            <p class="field__text">5 кг</p>
-            <p class="field__legend">Снижение веса</p>
+          <li class="example__stats-item feature">
+            <p class="feature__text">5 кг</p>
+            <p class="feature__legend">Снижение веса</p>
           </li>
-          <li class="example__stats-item field">
-            <p class="field__text">60 дней</p>
-            <p class="field__legend">Затрачено времени</p>
+          <li class="example__stats-item feature">
+            <p class="feature__text">60 дней</p>
+            <p class="feature__legend">Затрачено времени</p>
           </li>
         </ul>
         <p class="example__info">Затраты на питание: 15 000 руб.</p>
@@ -130,7 +127,7 @@
         </p>
       </div>
       <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177649!2d30.320889251744543!3d59.93879686895887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522059255714"
-      width="320" height="400" style="border:0" allowfullscreen></iframe>
+        width="320" height="400" style="border:0" allowfullscreen></iframe>
     </section>
 
   </main>
@@ -139,8 +136,8 @@
 
     <div class="container page-footer__wrapper">
       <div class="page-footer__logo">
-      <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Название магазина «Кэт энерджи»">
-    </div>
+        <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Название магазина «Кэт энерджи»">
+      </div>
       <div class="social">
         <ul class="social__list">
           <li><a class="social__button social__button--vk" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
@@ -149,7 +146,9 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><p class="copyright__text">HTML Academy:</p></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <p class="copyright__text">HTML Academy:</p>
+        </a>
         <a class="copyright__link copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
