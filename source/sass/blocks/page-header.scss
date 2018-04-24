@@ -5,4 +5,13 @@
 
 .page-header__logo {
   padding: 11px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -2,6 +2,12 @@
   background-color: $secondColor;
 }
 
+.example__stats-list {
+  @include resetList;
+  display: flex;
+  justify-content: space-between;
+}
+
 .example__list {
   @include resetList;
 }
