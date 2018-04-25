@@ -1,14 +1,13 @@
 .feature {
   position: relative;
   width: 122px;
-  height: 54px;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
 }
 
 .feature__text {
   margin: 0;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -25,4 +24,10 @@
   top: 33px;
   width: 87px;
   background-color: $secondColor;
+}
+
+@media (min-width: $tablet-width) {
+  .feature {
+    width: 160px;
+  }
 }

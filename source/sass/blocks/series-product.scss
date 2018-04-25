@@ -79,3 +79,14 @@
 .series-product__button {
   font-size: 16px;
 }
+
+@media (min-width: $desktop-width) {
+  .series-product__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .series-product__item {
+    width: 570px;
+  }
+}

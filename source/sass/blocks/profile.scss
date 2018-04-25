@@ -5,3 +5,15 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .profile__text {
+    margin: 34px 0 15px 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .profile__text {
+    margin: 34px 0 15px;
+  }
+}

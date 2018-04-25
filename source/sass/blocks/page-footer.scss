@@ -9,14 +9,9 @@
 }
 
 .page-footer__logo {
-  width: 100%;
   margin: 0 auto;
   padding: 30px 0;
   border-bottom: 1px solid rgba(68, 68, 68, 0.1);
-}
-
-.page-footer__logo-text {
-  padding-left: 78px;
 }
 
 .page-footer__copyright {
@@ -25,4 +20,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
 }

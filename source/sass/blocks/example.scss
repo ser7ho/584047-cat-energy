@@ -29,3 +29,34 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .example__stats-list {
+    width: 366px;
+    justify-content: space-between;
+  }
+
+  .example__stats-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__stats-wrapper {
+    width: 440px;
+    flex-shrink: 0;
+  }
+
+  .example__diff-wrapper {
+    width: 610px;
+    flex-shrink: 0;
+  }
+}
