@@ -1,5 +1,14 @@
+.addition-goods {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .addition-goods__list {
   @include resetList;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .addition-goods__title {
@@ -26,4 +35,20 @@
 
 .addition-goods__title-wrapper {
   display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .addition-goods__item {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .addition-goods__title {
+    width: 1220px;
+  }
+
+  .addition-goods__item {
+    width: 895px;
+  }
 }
