@@ -50,7 +50,7 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   &--comment {
     height: 150px;
@@ -65,6 +65,18 @@
   &--phone-number {
     background: url("../img/icon-phone.svg") no-repeat right 10px top 50%;
     background-size: 20px 20px;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
   }
 }
 
@@ -119,15 +131,17 @@
   }
 }
 
-.main-form__checkbox + .main-form__label::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  border: 1px solid #cdcdcd;
-  cursor: pointer;
+.main-form__checkbox + .main-form__label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+  }
 }
 
 .main-form__checkbox:checked + .main-form__label::before {
@@ -135,16 +149,28 @@
   background-size: 21px 16px;
 }
 
-.main-form__radio + .main-form__label::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  border: 1px solid #cdcdcd;
-  border-radius: 50%;
-  cursor: pointer;
+.main-form__radio + .main-form__label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.main-form__option {
+  &:hover .main-form__label::before {
+    border-color: #bababa;
+  }
+  &:active .main-form__label{
+    border-color: #bababa;
+    opacity: 0.3;
+  }
 }
 
 .main-form__radio:checked + .main-form__label {

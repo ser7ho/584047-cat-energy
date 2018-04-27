@@ -18,11 +18,13 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    flex: auto;
     margin: 0 0 0 auto;
   }
 
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-  }
+  // .main-nav__list {
+  //   display: flex;
+  //   margin-left: auto;
+  //
+  // }
 }

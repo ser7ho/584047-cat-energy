@@ -53,6 +53,10 @@
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .series-product__title {
