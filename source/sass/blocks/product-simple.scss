@@ -1,11 +1,11 @@
 .product-simple {
-  padding: 14px 0 17px;
+  padding: 15px 0 17px;
   border-bottom: 1px solid #cdcdcd;
 }
 
 .product-simple__title {
   margin: 0;
-  padding: 0 0 15px;
+  padding: 0 0 14px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -13,9 +13,13 @@
 }
 
 .product-simple__wrapper {
-  padding: 0 0 15px;
+  padding: 0 0 14px;
 
   @include text(14px, 14px);
   display: flex;
   justify-content: space-between;
+}
+
+.product-simple__price {
+  text-transform: uppercase;
 }

@@ -2,6 +2,20 @@
   margin: 0 auto;
 }
 
+@media (max-width: $mobile-width-only) {
+  .menu-button + .main-nav {
+    display: none;
+  }
+
+  .menu-button--close + .main-nav {
+    display: block;
+  }
+
+  .menu-button--nojs + .main-nav {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     margin: 0 0 0 auto;

@@ -14,7 +14,7 @@
       <div class="page-header__logo">
         <a class="page-header__logo-picture" href="index.html"><img class="page-header__logo-picture" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип"></a>
       </div>
-      <button class="page-header__menu-button menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="page-header__menu-button menu-button--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -94,19 +94,19 @@
             </div>
             <ul class="main-form__list main-form__list--add">
               <li class="main-form__option">
-                <input class="visually-hidden" type="checkbox" name="main-form__sweetener" id="main-form__sweetener" checked>
+                <input class="visually-hidden main-form__checkbox" type="checkbox" name="main-form__sweetener" id="main-form__sweetener" checked>
                 <label class="main-form__label main-form__label--option" for="main-form__sweetener">Сахарозаменитель</label>
               </li>
               <li class="main-form__option">
-                <input class="visually-hidden" type="checkbox" name="main-form__water" id="main-form__water">
+                <input class="visually-hidden main-form__checkbox" type="checkbox" name="main-form__water" id="main-form__water">
                 <label class="main-form__label main-form__label--option" for="main-form__water">Питьевая вода</label>
               </li>
               <li class="main-form__option">
-                <input class="visually-hidden" type="checkbox" name="main-form__milk" id="main-form__milk">
+                <input class="visually-hidden main-form__checkbox" type="checkbox" name="main-form__milk" id="main-form__milk">
                 <label class="main-form__label main-form__label--option" for="main-form__milk">Молоко</label>
               </li>
               <li class="main-form__option">
-                <input class="visually-hidden" type="checkbox" name="main-form__vitamins" id="main-form__vitamins">
+                <input class="visually-hidden main-form__checkbox" type="checkbox" name="main-form__vitamins" id="main-form__vitamins">
                 <label class="main-form__label main-form__label--option" for="main-form__vitamins">Витамины</label>
               </li>
             </ul>
@@ -150,6 +150,23 @@
 
   </footer>
 
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var menuButton = document.querySelector('.menu-button--nojs');
+
+    menuButton.classList.remove('menu-button--nojs');
+    menuButton.classList.add('menu-button');
+
+    menuButton.addEventListener('click', function() {
+      if (menuButton.classList.contains('menu-button')) {
+        menuButton.classList.remove('menu-button');
+        menuButton.classList.add('menu-button--close');
+      } else {
+        menuButton.classList.add('menu-button');
+        menuButton.classList.remove('menu-button--close');
+      }
+    });
+  </script>
 </body>
 
 </html>

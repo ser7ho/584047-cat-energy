@@ -1,9 +1,21 @@
 .page-header {
   margin: 0 auto;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    bottom: 0;
+    left: -20px;
+    background-color: #e6e6e6;
+  }
 }
 
 .page-header__logo {

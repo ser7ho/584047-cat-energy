@@ -14,7 +14,7 @@
       <div class="page-header__logo">
         <a class="page-header__logo-picture" href="index.html"><img class="page-header__logo-picture" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип"></a>
       </div>
-      <button class="page-header__menu-button menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="page-header__menu-button menu-button--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -28,8 +28,9 @@
   </div>
 
   <main class="page-main">
-    <div class="container">
+      <div class="container">
       <h1 class="subtitle">Каталог продукции</h1>
+    </div>
       <section class="goods">
         <h2 class="visually-hidden">Товары</h2>
         <ul class="goods__list">
@@ -189,6 +190,7 @@
         </ul>
       </section>
 
+      <div class="container">
       <section class="addition-goods">
         <div class="addition-goods__title-wrapper">
           <h2 class="addition-goods__title">Дополнительные товары</h2>
@@ -269,6 +271,23 @@
 
   </footer>
 
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var menuButton = document.querySelector('.menu-button--nojs');
+
+    menuButton.classList.remove('menu-button--nojs');
+    menuButton.classList.add('menu-button');
+
+    menuButton.addEventListener('click', function() {
+      if (menuButton.classList.contains('menu-button')) {
+        menuButton.classList.remove('menu-button');
+        menuButton.classList.add('menu-button--close');
+      } else {
+        menuButton.classList.add('menu-button');
+        menuButton.classList.remove('menu-button--close');
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 .example {
+  padding: 5px 0 0;
   background-color: $secondColor;
 }
 
@@ -10,24 +11,49 @@
 
 .example__list {
   @include resetList;
+  position: relative;
+  min-height: 240px;
 }
 
 .example__text {
+  margin: 23px 0;
+  padding: 0 10px 0 0;
+
   @include text;
 }
 
 .example__info {
+  padding: 20px 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 40px 0 44px;
 }
 
 .example__slider {
+  padding: 35px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.example__diff-wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.example__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--before {
+    z-index: 1;
+  }
+
+  &--after {
+    z-index: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {

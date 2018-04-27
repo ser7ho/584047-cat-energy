@@ -4,7 +4,7 @@
 
 .series-product__item {
   background: $secondColor;
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
 @mixin icon ($width, $height, $left, $bottom, $url) {
@@ -48,7 +48,7 @@
   &::after {
     position: absolute;
     content: "";
-    right: -26px;
+    right: -16px;
     width: 24px;
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
@@ -58,7 +58,7 @@
 .series-product__title {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 14px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -69,7 +69,7 @@
   @include text;
   margin: 0 20px;
   padding: 0 0 23px;
-  border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .series-product__wrapper-title {

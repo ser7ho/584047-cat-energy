@@ -3,6 +3,7 @@
 }
 
 .contacts__map {
+  display: block;
   width: 100%;
   min-width: 320px;
   height: 360px;
@@ -26,7 +27,7 @@
 
 .contacts__wrapper {
   margin: 0 auto;
-  padding: 35px 0;
+  padding: 25px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

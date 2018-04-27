@@ -12,6 +12,17 @@
 
 .site-list__item {
   padding: 22px 0;
-  border-top: 1px solid $secondColor;
+  position: relative;
   text-align: center;
+
+  &::before {
+    position: absolute;
+    top: -1px;
+    left: -69px;
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
 }

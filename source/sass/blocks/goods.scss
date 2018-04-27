@@ -1,8 +1,17 @@
+.goods {
+  margin: 30px auto 0;
+  width: 320px;
+}
+
 .goods__list {
   @include resetList;
 }
 
 @media (min-width: $tablet-width) {
+  .goods {
+    width: 768px;
+  }
+
   .goods__list {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +23,11 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .goods {
+    width: 1300px;
+  }
+
   .goods__item {
     width: 245px;
   }
