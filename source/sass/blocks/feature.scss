@@ -27,8 +27,28 @@
   background-color: $secondColor;
 }
 
+//---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
   .feature {
     width: 160px;
   }
+
+  .feature__text {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .feature__legend {
+    @include text(14px, 14px);
+    text-transform: lowercase;
+    text-align: center;
+    white-space: pre;
+    padding: 0 7px;
+    left: 50%;
+    top: 47px;
+    width: auto;
+    transform: translate(-50%);
+    background-color: #ffffff;
+  }
 }
+//------------------------------------------------------------------------------

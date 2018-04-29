@@ -31,7 +31,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    padding: 20px 0 0;
+  }
   .page-header__menu-button {
     display: none;
+  }
+
+  .page-header {
+    align-items: center;
+    &::before {
+      content: none;
+    }
+  }
+
+  .page-header__logo {
+    padding: 5px 0 10px;
+  }
+
+  .page-header__logo-picture {
+    width: 172px;
+    height: 57px;
   }
 }

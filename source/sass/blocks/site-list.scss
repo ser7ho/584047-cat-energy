@@ -50,10 +50,14 @@
 
   .site-list__item {
     margin-left: 35px;
+    padding: 22px 0 25px;
+    &:before {
+      content: none;
+    }
 
     &--current .site-list__link::before  {
       position: absolute;
-      bottom: 15px;
+      bottom: 18px;
       left: 0;
       content: "";
       display: block;

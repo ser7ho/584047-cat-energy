@@ -5,6 +5,10 @@
 .series-product__item {
   background: $secondColor;
   margin: 18px 0;
+  padding: 25px 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 @mixin icon ($width, $height, $left, $bottom, $url) {
@@ -18,8 +22,6 @@
 }
 
 .series-product__icon {
-  display: inline-block;
-  vertical-align: middle;
   position: relative;
   border-radius: 50%;
   width: 50px;
@@ -36,9 +38,8 @@
 }
 
 .series-product__link {
+  padding: 20px 0;
   position: relative;
-  padding: 20px;
-  display: inline-block;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -48,7 +49,7 @@
   &::after {
     position: absolute;
     content: "";
-    right: -16px;
+    right: -35px;
     width: 24px;
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
@@ -60,9 +61,7 @@
 }
 
 .series-product__title {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 0 14px;
+  margin: 0 0 0 20px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -71,19 +70,63 @@
 
 .series-product__text {
   @include text;
-  margin: 0 20px;
-  padding: 0 0 23px;
+  margin: 0;
+  padding: 23px 0;
+  width: 240px;
   border-bottom: 1px solid #d9d9d9;
 }
 
-.series-product__wrapper-title {
-  padding: 25px;
-}
+//---tablet---------------------------------------------------------------------
+@media (min-width: $tablet-width) {
+  .series-product__item {
+    margin: 36px 0;
+    padding: 75px 0 0 52px;
+    align-items: flex-start;
+  }
 
-.series-product__button {
-  font-size: 16px;
-}
+  .series-product__icon {
+    margin: -20px 60px 0 auto;
+    width: 200px;
+    height: 200px;
+    order: 1;
 
+    &--slim::before {
+      @include icon(140px, 194px, 29px, 18px, "../img/icon-cat-slim.svg");
+    }
+
+    &--pro::before {
+      @include icon(268px, 112px, -35px, 45px, "../img/icon-cat-pro.svg");
+    }
+  }
+
+  .series-product__title {
+    margin: 0;
+    font-size: 36px;
+    width: 370px;
+  }
+
+  .series-product__text {
+    @include text(16px, 24px);
+    width: 375px;
+    border-bottom: none;
+  }
+
+  .series-product__link {
+    order: 2;
+    flex: none;
+    padding: 0 0 55px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      right: -48px;
+      top: 4px;
+    }
+}
+}
+// -----------------------------------------------------------------------------
+
+//---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
   .series-product__list {
     display: flex;
@@ -94,3 +137,4 @@
     width: 570px;
   }
 }
+//------------------------------------------------------------------------------

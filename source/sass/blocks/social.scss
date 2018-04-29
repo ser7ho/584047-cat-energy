@@ -1,13 +1,13 @@
-.social {
-  width: 280px;
-  padding: 21px 0;
-  border-bottom: 1px solid #d9d9d9;
-}
+// .social {
+//   width: 280px;
+//   border-bottom: 1px solid #d9d9d9;
+// }
 
 .social__list {
   @include resetList;
   width: 128px;
-  padding: 0 70px;
+  padding: 0 7px 0 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,3 +35,40 @@
     background-image: url("../img/icon-fb-mobile.svg");
   }
 }
+
+//---tablet---------------------------------------------------------------------
+@media (min-width: $tablet-width) {
+  // .social__list {
+  //   @include resetList;
+  //   width: 128px;
+  //   padding: 0 7px 0 0;
+  //   margin: 0 auto;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+
+  .social__button {
+    display: block;
+    background: no-repeat 50% 50%;
+
+    &--vk {
+      width: 30px;
+      height: 16px;
+      background-image: url("../img/icon-vk-mobile.svg");
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/icon-insta-mobile.svg");
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+      background-image: url("../img/icon-fb-mobile.svg");
+    }
+  }
+}
+//------------------------------------------------------------------------------

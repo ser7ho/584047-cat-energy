@@ -10,7 +10,6 @@
 
 .slider-diff__toggle {
   position: absolute;
-  content: "";
   margin: 4px 6px;
   width: 35px;
   height: 6px;
@@ -26,3 +25,42 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+//---tablet---------------------------------------------------------------------
+@media (min-width: $tablet-width) {
+  .slider-diff__wrapper {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+  }
+
+  .slider-diff__toggle {
+    position: absolute;
+    top: -17px;
+    left: 200px;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $mainColor;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+  }
+
+  .slider-diff__button {
+    font-size: 20px;
+  }
+}
+//------------------------------------------------------------------------------
