@@ -40,8 +40,6 @@
 
   .feature__legend {
     @include text(14px, 14px);
-    text-transform: lowercase;
-    text-align: center;
     white-space: pre;
     padding: 0 7px;
     left: 50%;
@@ -49,6 +47,14 @@
     width: auto;
     transform: translate(-50%);
     background-color: #ffffff;
+  }
+}
+//------------------------------------------------------------------------------
+
+//---desktop--------------------------------------------------------------------
+@media (min-width: $desktop-width) {
+  .feature__legend {
+    background-color: #f2f2f2;
   }
 }
 //------------------------------------------------------------------------------

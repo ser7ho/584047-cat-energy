@@ -30,19 +30,19 @@
   }
 }
 
+//---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
   .page-header {
     padding: 20px 0 0;
-  }
-  .page-header__menu-button {
-    display: none;
-  }
-
-  .page-header {
     align-items: center;
+
     &::before {
       content: none;
     }
+  }
+
+  .page-header__menu-button {
+    display: none;
   }
 
   .page-header__logo {
@@ -54,3 +54,17 @@
     height: 57px;
   }
 }
+//------------------------------------------------------------------------------
+
+//---desktop--------------------------------------------------------------------
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 50px 0 0;
+  }
+
+  .page-header__logo-picture {
+    width: 202px;
+    height: 59px;
+  }
+}
+//------------------------------------------------------------------------------

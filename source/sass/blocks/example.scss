@@ -1,5 +1,5 @@
 .example {
-  padding: 5px 0 0;
+  padding: 15px 0 0;
   background-color: $secondColor;
 }
 
@@ -13,12 +13,16 @@
   @include resetList;
   position: relative;
   display: flex;
+  justify-content: center;
   width: 100%;
-  overflow: hidden;
 }
 
 .example__item {
   flex: none;
+}
+
+.example__title {
+  margin: 0;
 }
 
 .example__text {
@@ -48,29 +52,15 @@
   width: 320px;
 }
 
-// .example__image {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//
-//   &--before {
-//     z-index: 1;
-//   }
-//
-//   &--after {
-//     z-index: -1;
-//   }
-// }
-
 //---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
   .example {
-    padding: 24px 0 0;
+    padding: 10px 0 0;
     background-color: #ffffff;
   }
 
-  .example__list {
-    margin: 0 0 0 46px;
+  .example__title {
+    padding: 0 0 15px;
   }
 
   .example__text {
@@ -104,13 +94,40 @@
 
   .example__diff-wrapper {
     margin: 0 auto;
-    width: 768px;
-    background-color: #f2f2f2;
+    width: 100%;
+    background-image:
+      linear-gradient(#ffffff 27%, transparent 27%),
+      linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
   .example__list {
     margin: 0 auto;
-    padding:  0 0 18px;
+    width: 690px;
+    padding: 0 0 18px;
+  }
+
+  .example__item {
+    &--before {
+      width: 50%;
+    }
+
+    &--after {
+      width: 50%;
+    }
+  }
+
+  .example__image {
+    width: 100%;
+    height: 517px;
+    object-fit: cover;
+
+    &--before {
+      object-position: left;
+    }
+
+    &--after {
+      object-position: right;
+    }
   }
 
   .example__slider {
@@ -124,19 +141,78 @@
 
 //---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
-  .example__wrapper {
-    display: flex;
-    justify-content: space-between;
+  .example {
+    background-image:
+      linear-gradient(#ffffff 25%, transparent 25%),
+      linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
-  .example__stats-wrapper {
-    width: 440px;
-    flex-shrink: 0;
+  .example__list {
+    margin: -51px auto 0 -7px;
+    padding: 0 0 36px;
   }
 
   .example__diff-wrapper {
-    width: 610px;
+    width: 690px;
+    background-image:
+      linear-gradient(#ffffff 24%, transparent 24%),
+      linear-gradient(to right, #f2f2f2 52%, #eaeaea 52%);
+  }
+
+  .example__item {
+    &--before {
+      width: 53%;
+    }
+
+    &--after {
+      width: 47%;
+    }
+  }
+
+  .example__wrapper {
+    margin: 0 auto;
+    width: 1440px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .example__wrapper-container {
+    padding: 0 0 0 48px;
+    width: 450px;
+  }
+
+  .example__stats-wrapper {
+    margin: 0;
+    width: 435px;
     flex-shrink: 0;
+  }
+
+  .example__slider {
+    padding: 0 0 74px;
+    margin: 0 0 0 25px;
+  }
+
+  .example__title {
+    padding: 0 0 147px;
+  }
+
+  .example__text {
+    margin: 0;
+    padding: 0 0 68px;
+  }
+
+  .example__stats-list {
+    padding: 0 0 60px;
+  }
+
+  .example__info {
+    width: auto;
+    padding: 0;
+    text-align: right;
+  }
+
+  .example__price {
+    margin: 0 0 0 60px;
   }
 }
 //------------------------------------------------------------------------------

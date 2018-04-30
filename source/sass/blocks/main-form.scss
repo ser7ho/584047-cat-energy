@@ -164,10 +164,22 @@
 }
 
 .main-form__option {
+  position: relative;
+  margin: 24px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &:hover .main-form__label::before {
     border-color: #bababa;
   }
-  &:active .main-form__label{
+
+  &:active .main-form__label {
     border-color: #bababa;
     opacity: 0.3;
   }
@@ -205,19 +217,7 @@
   }
 }
 
-.main-form__option {
-  position: relative;
-  margin: 24px 0;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
+//---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
   .main-form {
     margin: 0 auto;
@@ -246,7 +246,9 @@
     padding-left: 60px;
   }
 }
+//------------------------------------------------------------------------------
 
+//---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
   .main-form {
     width: auto;
@@ -275,3 +277,4 @@
     width: 285px;
   }
 }
+//------------------------------------------------------------------------------

@@ -66,3 +66,24 @@
   }
 }
 //------------------------------------------------------------------------------
+
+//---desktop--------------------------------------------------------------------
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: absolute;
+    top: 94px;
+    width: 570px;
+    background-color: #ffffff;
+  }
+
+  .contacts__title {
+    margin: 0 0 0 75px;
+  }
+
+  .contacts__address {
+    margin: 0 85px 0 0;
+    width: 160px;
+    text-align: left;
+  }
+}
+//------------------------------------------------------------------------------

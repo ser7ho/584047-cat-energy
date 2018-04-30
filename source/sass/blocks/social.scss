@@ -1,8 +1,3 @@
-// .social {
-//   width: 280px;
-//   border-bottom: 1px solid #d9d9d9;
-// }
-
 .social__list {
   @include resetList;
   width: 128px;
@@ -38,16 +33,6 @@
 
 //---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
-  // .social__list {
-  //   @include resetList;
-  //   width: 128px;
-  //   padding: 0 7px 0 0;
-  //   margin: 0 auto;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
-
   .social__button {
     display: block;
     background: no-repeat 50% 50%;
