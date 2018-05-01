@@ -3,7 +3,7 @@
 }
 
 .profile__text {
-  margin: 25px 0 15px;
+  margin: 25px 0 40px;
   width: 260px;
   font-size: 14px;
   line-height: 18px;
@@ -12,16 +12,27 @@
 
 //---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
+  .profile {
+    padding: 0 0 72px;
+  }
+
   .profile__text {
-    margin: 34px 0 15px 40px;
+    margin: 34px 0 61px 40px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 340px;
   }
 }
 //------------------------------------------------------------------------------
 
 //---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
+  .profile {
+    padding: 0 0 85px;
+  }
+
   .profile__text {
-    margin: 34px 0 15px;
+    margin: 34px 0 60px;
   }
 }
 //------------------------------------------------------------------------------

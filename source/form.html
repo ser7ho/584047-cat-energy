@@ -38,24 +38,24 @@
       <section class="profile">
         <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="main-form__fieldset main-form__fieldset--cat-info">
-            <ul class="main-form__list">
+          <fieldset class="main-form__fieldset">
+            <ul class="main-form__list-1">
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__name">Имя:<sup>*</sup></label>
-                <input class="main-form__input" type="text" name="name" id="main-form__name" value="" placeholder="Барсик" required>
+                <input class="main-form__input" type="text" name="name" id="main-form__name" value="Барсик" placeholder="Барсик" required>
               </li>
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__weight">Вес (кг):<sup>*</sup></label>
-                <input class="main-form__input" type="number" name="weight" id="main-form__weight" value="" placeholder="7" required>
+                <input class="main-form__input" type="number" name="weight" id="main-form__weight" value="7" placeholder="7" required>
               </li>
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__age">Возраст (лет):</label>
-                <input class="main-form__input" type="number" name="age" id="main-form__age" value="" placeholder="7">
+                <input class="main-form__input" type="number" name="age" id="main-form__age" value="7" placeholder="7">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="main-form__fieldset main-form__fieldset--goal">
-            <ul class="main-form__list">
+          <fieldset class="main-form__fieldset">
+            <ul class="main-form__list-2">
               <li class="main-form__option">
                 <input class="visually-hidden main-form__radio" type="radio" name="profile" value="slim" id="main-form__slim" checked>
                 <label class="main-form__label main-form__label--option" for="main-form__slim">Похудение</label>
@@ -71,32 +71,26 @@
             </ul>
           </fieldset>
           <fieldset class="main-form__fieldset">
-            <div class="main-form__title-wrapper">
               <h3 class="main-form__title">Контактные данные (вдадельца кота)</h3>
-            </div>
-            <ul class="main-form__list main-form__list--contacts">
+            <ul class="main-form__list-3">
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__email">e-mail:<sup>*</sup></label>
-                <input class="main-form__input main-form__input--email" type="email" name="main-form__email" id="main-form__email" value="" placeholder="kuklachev@gmail.com" required>
+                <input class="main-form__input main-form__input--email" type="email" name="main-form__email" id="main-form__email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__phone-number">Телефон:<sup>*</sup></label>
-                <input class="main-form__input main-form__input--phone-number" type="tel" name="main-form__phone-number" id="main-form__phone-number" value="" placeholder="8(960)900-60-90" required>
+                <input class="main-form__input main-form__input--phone-number" type="tel" name="main-form__phone-number" id="main-form__phone-number" value="8(960)900-60-90" placeholder="8(960)900-60-90" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="main-form__fieldset">
-            <div class="main-form__title-wrapper">
               <h3 class="main-form__title">Комментарий</h3>
-            </div>
             <label class="visually-hidden" for="comment__message">Комментарий</label>
             <textarea class="main-form__input main-form__input--comment" id="comment__message" name="comment__message" placeholder="расскажите обо всех повадках кота" rows="4"></textarea>
           </fieldset>
           <fieldset class="main-form__fieldset profile">
-            <div class="main-form__title-wrapper">
               <h3 class="main-form__title">Дополнительно</h3>
-            </div>
-            <ul class="main-form__list main-form__list--add">
+            <ul class="main-form__list-4">
               <li class="main-form__option">
                 <input class="visually-hidden main-form__checkbox" type="checkbox" name="main-form__sweetener" id="main-form__sweetener" checked>
                 <label class="main-form__label main-form__label--option" for="main-form__sweetener">Сахарозаменитель</label>
@@ -119,7 +113,8 @@
           <span class="main-form__footnote"><sup>*</sup>— Обязательные поля</span>
         </form>
       </section>
-    </div>
+      </div>
+
     <section class="contacts contacts--inner">
       <div class="container">
         <div class="contacts__wrapper">

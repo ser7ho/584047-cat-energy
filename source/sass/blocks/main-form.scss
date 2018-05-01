@@ -1,9 +1,8 @@
 .main-form__title {
-  display: block;
-  max-width: 182px;
+  display: inline-block;
+  max-width: 184px;
   margin: 0;
-  padding: 31px 20px 31px 0;
-  width: auto;
+  padding: 0 24px 35px 0;
   position: relative;
   font-size: 24px;
   line-height: 24px;
@@ -15,16 +14,40 @@
     position: absolute;
     margin: 0 0 0 20px;
     left: 0;
-    top: 45px;
-    width: 280px;
+    top: 15px;
+    width: 100vw;
     height: 3px;
     background-color: $mainColor;
     z-index: -1;
   }
 }
 
-.main-form__title-wrapper {
-  display: inline-block;
+.main-form__list-1,
+.main-form__list-2,
+.main-form__list-3,
+.main-form__list-4 {
+  @include resetList;
+}
+
+.main-form__list-1 {
+  padding: 0 0 22px;
+}
+
+.main-form__list-2 {
+  padding: 26px 20px 27px;
+  margin: 0 auto 28px;
+  width: 280px;
+  position: relative;
+  left: -20px;
+  border: 1px solid #ededed;
+}
+
+.main-form__list-3 {
+  padding: 0 0 28px;
+}
+
+.main-form__list-4 {
+  padding: 0 0 15px;
 }
 
 .main-form__label {
@@ -55,6 +78,7 @@
   &--comment {
     height: 150px;
     padding: 13px;
+    margin: 0 0 28px;
   }
 
   &--email {
@@ -91,44 +115,10 @@
   margin: 0;
   padding: 0;
   border: none;
-  position: relative;
-
-  &--goal::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: 320px;
-    height: 1px;
-    background-color: #ededed;
-  }
-
-  &--goal::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    width: 320px;
-    height: 1px;
-    background-color: #ededed;
-  }
 }
 
 .main-form__button {
   margin: 30px 0 0;
-}
-
-.main-form__list {
-  @include resetList;
-  padding: 25px 0;
-
-  &--contacts {
-    padding: 0;
-  }
-
-  &--add {
-    padding: 10px 0;
-  }
 }
 
 .main-form__checkbox + .main-form__label {
@@ -165,14 +155,10 @@
 
 .main-form__option {
   position: relative;
-  margin: 24px 0;
-
-  &:first-child {
-    margin-top: 0;
-  }
+  padding: 0 0 24px;
 
   &:last-child {
-    margin-bottom: 0;
+    padding: 0;
   }
 
   &:hover .main-form__label::before {
@@ -203,47 +189,154 @@
 }
 
 .main-form__item {
-  padding: 7px 0;
+  padding: 0 0 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  &:first-child {
-    padding-top: 0;
-  }
-
   &:last-child {
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 
 //---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
   .main-form {
-    margin: 0 auto;
+    margin: 0 40px 0 37px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 630px;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .main-form__item {
+    padding: 0 0 20px;
   }
 
   .main-form__fieldset {
     width: 100%;
   }
 
-  .main-form__list--add {
+  .main-form__list-1 {
+    padding: 0 0 73px;
+  }
+
+  .main-form__list-2 {
+    padding: 34px 0 36px;
+    margin: 0 0 73px;
+    width: 100%;
+    position: static;
+  }
+
+  .main-form__list-3 {
+    padding: 0 0 67px;
+  }
+
+  .main-form__list-4 {
     display: flex;
     justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
-    flex-shrink: 0;
+  }
+
+  .main-form__list-4 .main-form__option {
+    width: 288px;
+    padding: 0 0 50px;
   }
 
   .main-form__option {
     width: 315px;
+    padding: 0 0 33px;
+  }
+
+  .main-form__label {
+    padding: 0 22px 0 0;
+    font-size: 20px;
+    line-height: 20px;
+
+
+    &--option {
+      padding: 0 0 0 91px;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .main-form__input {
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--comment {
+      height: 174px;
+      padding: 13px;
+      margin: 0 0 63px;
+    }
+  }
+
+  .main-form__radio + .main-form__label {
+    &::before {
+      top: -10px;
+      left: 30px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .main-form__radio:checked + .main-form__label {
+    &::after {
+      margin: 2px 0 0;
+      left: 43px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .main-form__title {
+    padding: 0 24px 73px 24px;
+    margin: 0 0 0 -24px;
+    font-size: 36px;
+    line-height: 36px;
+    max-width: none;
+    width: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      margin: 0;
+      right: -24px;
+      top: 15px;
+      width: 100vw;
+      height: 3px;
+      background-color: $mainColor;
+      z-index: -1;
+    }
+  }
+
+  .main-form__checkbox + .main-form__label {
+    padding: 0 0 0 62px;
+
+    &::before {
+      top: -13px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .main-form__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 0 5px;
+    height: 52px;
   }
 
   .main-form__footnote {
-    padding-left: 60px;
+    @include text(16px, 16px);
+    padding: 0;
+    margin: 0 0 0 68px;
+    display: block;
+    text-align: center;
   }
 }
 //------------------------------------------------------------------------------
@@ -251,7 +344,9 @@
 //---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
   .main-form {
-    width: auto;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .main-form__item,
@@ -263,18 +358,39 @@
     width: auto;
   }
 
-  .main-form__list--contacts {
+  .main-form__list-3 {
+    padding: 0 0 45px;
     width: 1220px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .main-form__input--comment {
     width: 1220px;
   }
 
-  .main-form__list--add .main-form__option {
-    width: 285px;
+  .main-form__list-4 {
+    padding: 0 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .main-form__list-4 .main-form__option {
+    width: 245px;
+    margin: 0 80px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .main-form__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 0 5px;
+    width: 568px;
+    height: 52px;
   }
 }
-//------------------------------------------------------------------------------
