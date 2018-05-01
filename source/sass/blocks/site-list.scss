@@ -75,11 +75,14 @@
 @media (min-width: $desktop-width) {
   .site-list__link {
     font-size: 20px;
-    color: #ffffff;
+
+    &--main {
+      color: #ffffff;
+    }
   }
 
   .site-list__item {
-    &--current .site-list__link::before {
+    &--current .site-list__link--main::before {
       background-color: #ffffff;
     }
   }

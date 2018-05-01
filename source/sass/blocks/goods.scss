@@ -10,12 +10,12 @@
 //---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
   .goods {
-    width: 768px;
+    width: 708px;
     margin: 0 auto;
   }
 
   .goods__list {
-    padding: 0 30px 65px;
+    padding: 0 0 65px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -30,11 +30,11 @@
 //---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
   .goods {
-    width: 1440px;
+    width: 1220px;
   }
 
-  .goods__item {
-    width: 245px;
+  .goods__list {
+    padding: 0 0 73px;
   }
 }
 //------------------------------------------------------------------------------

@@ -94,7 +94,6 @@
     border: none;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
 
     &--more {
       background-color: #ffffff;
@@ -166,3 +165,18 @@
   }
 }
 //------------------------------------------------------------------------------
+
+//---tablet---------------------------------------------------------------------
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+  }
+
+  .product__description {
+    width: 170px;
+  }
+
+  .product__button {
+    width: 169px;
+  }
+}

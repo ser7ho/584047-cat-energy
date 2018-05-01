@@ -56,7 +56,6 @@
       right: -30px;
       top: 22px;
       width: 328px;
-      z-index: 2;
     }
   }
 
@@ -72,12 +71,35 @@
 
 //---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
-  .addition-goods__title {
-    width: 1220px;
+  .addition-goods {
+    padding: 0 0 19px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .addition-goods__list {
+    margin: 0 auto 0 0;
   }
 
   .addition-goods__item {
     width: 895px;
+  }
+
+  .addition-goods__title {
+    width: 1220px;
+    padding: 0 0 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -110px;
+      width: 70px;
+    }
+
+    &::after {
+      right: -110px;
+      width: 960px;
+    }
   }
 }
 //------------------------------------------------------------------------------
