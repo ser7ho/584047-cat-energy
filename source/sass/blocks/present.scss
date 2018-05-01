@@ -20,4 +20,28 @@
   @include text(16px, 20px);
   color: #ffffff;
   text-align: center;
+  text-transform: none;
 }
+
+//---tablet---------------------------------------------------------------------
+@media (min-width: $tablet-width) {
+  .present {
+    display: flex;
+    align-items: center;
+    width: 708px;
+    height: 200px;
+    background: $mainColor url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
+  }
+
+  .present__icon {
+    margin: 0 0 0 91px;
+    padding: 0;
+    background: url("../img/icon-gift.svg") no-repeat 0 0;
+  }
+
+  .present__text {
+    margin: 0 115px 0 auto;
+    text-align: left;
+  }
+}
+//------------------------------------------------------------------------------

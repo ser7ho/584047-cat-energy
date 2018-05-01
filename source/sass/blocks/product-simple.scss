@@ -23,3 +23,36 @@
 .product-simple__price {
   text-transform: uppercase;
 }
+
+//---tablet---------------------------------------------------------------------
+@media (min-width: $tablet-width) {
+  .product-simple {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 0 0;
+    border: 1px solid #cdcdcd;
+  }
+
+  .product-simple__title {
+    margin: 0 0 0 40px;
+    padding: 0 0 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .product-simple__wrapper {
+    margin: 0 40px 0 auto;
+
+    @include text(16px, 20px);
+  }
+
+  .product-simple__price {
+    margin: 0 0 0 50px;
+  }
+
+  .product-simple__button {
+    margin: 0 0 26px 40px;
+    width: 630px;
+  }
+}
+//------------------------------------------------------------------------------

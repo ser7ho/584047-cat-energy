@@ -11,16 +11,18 @@
 @media (min-width: $tablet-width) {
   .goods {
     width: 768px;
+    margin: 0 auto;
   }
 
   .goods__list {
+    padding: 0 30px 65px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .goods__item {
-    width: 324px;
+    margin: 140px 0 0;
   }
 }
 //------------------------------------------------------------------------------
@@ -28,7 +30,7 @@
 //---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
   .goods {
-    width: 1300px;
+    width: 1440px;
   }
 
   .goods__item {

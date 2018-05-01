@@ -33,7 +33,7 @@
 
   <main class="page-main">
     <div class="container">
-      <h1 class="subtitle">Подбор программы</h1>
+      <h1 class="page-main__title subtitle">Подбор программы</h1>
 
       <section class="profile">
         <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -121,12 +121,14 @@
       </section>
     </div>
     <section class="contacts contacts--inner">
-      <div class="container contacts__wrapper">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <div class="container">
+        <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
         <p class="contacts__address">
-          ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
+          ул. Большая<br> Конюшенная, д. 19/8<br> <span class="contacts__city">Санкт-Петербург</span>
         </p>
       </div>
+    </div>
       <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177649!2d30.320889251744543!3d59.93879686895887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522059255714"
         width="320" height="400" style="border:0" allowfullscreen></iframe>
     </section>
@@ -136,8 +138,10 @@
   <footer class="page-footer">
 
     <div class="container page-footer__wrapper">
-      <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Название магазина «Кэт энерджи»"></a>
-      <div class="social">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Название магазина «Кэт энерджи»">
+      </a>
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li><a class="social__button social__button--vk" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
           <li><a class="social__button social__button--insta" href="#" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
