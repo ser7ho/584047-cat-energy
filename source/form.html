@@ -39,7 +39,7 @@
         <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="main-form__fieldset">
-            <ul class="main-form__list-1">
+            <ul class="main-form__list main-form__list--text">
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__name">Имя:<sup>*</sup></label>
                 <input class="main-form__input" type="text" name="name" id="main-form__name" value="Барсик" placeholder="Барсик" required>
@@ -55,7 +55,7 @@
             </ul>
           </fieldset>
           <fieldset class="main-form__fieldset">
-            <ul class="main-form__list-2">
+            <ul class="main-form__list main-form__list--radio-options">
               <li class="main-form__option">
                 <input class="visually-hidden main-form__radio" type="radio" name="profile" value="slim" id="main-form__slim" checked>
                 <label class="main-form__label main-form__label--option" for="main-form__slim">Похудение</label>
@@ -72,7 +72,7 @@
           </fieldset>
           <fieldset class="main-form__fieldset">
               <h3 class="main-form__title">Контактные данные (вдадельца кота)</h3>
-            <ul class="main-form__list-3">
+            <ul class="main-form__list main-form__list--contacts">
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__email">e-mail:<sup>*</sup></label>
                 <input class="main-form__input main-form__input--email" type="email" name="main-form__email" id="main-form__email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required>
@@ -90,7 +90,7 @@
           </fieldset>
           <fieldset class="main-form__fieldset profile">
               <h3 class="main-form__title">Дополнительно</h3>
-            <ul class="main-form__list-4">
+            <ul class="main-form__list main-form__list--checkbox-options">
               <li class="main-form__option">
                 <input class="visually-hidden main-form__checkbox" type="checkbox" name="main-form__sweetener" id="main-form__sweetener" checked>
                 <label class="main-form__label main-form__label--option" for="main-form__sweetener">Сахарозаменитель</label>
@@ -153,23 +153,7 @@
 
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var menuButton = document.querySelector('.menu-button--nojs');
-
-    menuButton.classList.remove('menu-button--nojs');
-    menuButton.classList.add('menu-button');
-
-    menuButton.addEventListener('click', function() {
-      if (menuButton.classList.contains('menu-button')) {
-        menuButton.classList.remove('menu-button');
-        menuButton.classList.add('menu-button--close');
-      } else {
-        menuButton.classList.add('menu-button');
-        menuButton.classList.remove('menu-button--close');
-      }
-    });
-  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
