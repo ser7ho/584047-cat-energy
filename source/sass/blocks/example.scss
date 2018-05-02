@@ -18,7 +18,13 @@
 }
 
 .example__item {
-  flex: none;
+  &--before {
+    width: 100%;
+  }
+
+  &--after {
+    width: 0;
+  }
 }
 
 .example__title {

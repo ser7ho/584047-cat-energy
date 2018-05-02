@@ -54,6 +54,7 @@
 }
 
 .product__image {
+  width: 140px;
   display: block;
 }
 
@@ -102,6 +103,7 @@
   }
 
   .product__image {
+    width: 324px;
     padding: 0 0 38px;
 
     &--small {
@@ -178,5 +180,9 @@
 
   .product__button {
     width: 169px;
+  }
+
+  .product__image {
+    width: 245px;
   }
 }
