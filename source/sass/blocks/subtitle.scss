@@ -1,6 +1,12 @@
 .subtitle {
-  margin: 25px 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
+}
+
+//---tablet---------------------------------------------------------------------
+@media (min-width: $tablet-width) {
+  .subtitle {
+    font-size: 60px;
+  }
 }

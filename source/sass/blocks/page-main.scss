@@ -1,24 +1,20 @@
-.container {
-  width: 280px;
+.page-main__title {
   margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
+  padding: 15px 0 0;
 }
 
 //---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
-  .container {
-    width: 708px;
-    padding: 0 30px;
+  .page-main__title {
+    padding: 46px 0 25px;
   }
 }
 //------------------------------------------------------------------------------
 
 //---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
-  .container {
-    width: 1220px;
-    padding: 0 110px;
+  .page-main__title {
+    padding: 62px 0 25px;
   }
 }
 //------------------------------------------------------------------------------

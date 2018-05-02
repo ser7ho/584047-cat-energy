@@ -1,4 +1,5 @@
 .menu-button {
+  margin-left: auto;
   display: block;
   position: relative;
   box-sizing: border-box;
@@ -12,11 +13,15 @@
     content: "";
     position: absolute;
     left: 0;
-    top: -4px;
+    top: 0;
     width: 100%;
     height: 2px;
     background-color: #222222;
     box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+  }
+
+  &--nojs {
+    display: none;
   }
 
   &--close {
@@ -55,8 +60,11 @@
   }
 }
 
+//---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
-  .menu-button {
+  .menu-button,
+  .menu-button--close {
     display: none;
   }
 }
+//------------------------------------------------------------------------------

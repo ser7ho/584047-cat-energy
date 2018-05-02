@@ -1,11 +1,10 @@
 .addition-goods {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 0 0 35px;
 }
 
 .addition-goods__list {
   @include resetList;
+  padding: 0 0 38px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -13,8 +12,8 @@
 
 .addition-goods__title {
   position: relative;
-  margin: 0;
-  padding: 32px 20px 32px 0;
+  margin: 32px 0;
+  padding: 0 20px 0 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -23,32 +22,84 @@
   &::after {
     content: "";
     position: absolute;
-    margin: 0 0 0 20px;
-    left: 0;
-    top: 45px;
-    width: 280px;
+    right: -20px;
+    top: 16px;
+    width: 53px;
     height: 3px;
     background-color: $mainColor;
-    z-index: -1;
   }
 }
 
-.addition-goods__title-wrapper {
-  display: inline-block;
-}
-
+//---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
+  .addition-goods {
+    padding: 0 0 76px;
+  }
+
+  .addition-goods__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0 37px 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 22px;
+      width: 30px;
+      height: 3px;
+      background-color: $mainColor;
+    }
+
+    &::after {
+      right: -30px;
+      top: 22px;
+      width: 328px;
+    }
+  }
+
+  .addition-goods__list {
+    padding: 0 0 70px;
+  }
+
   .addition-goods__item {
-    width: 708px;
+    margin: 0 0 -1px;
   }
 }
+//------------------------------------------------------------------------------
 
+//---desktop--------------------------------------------------------------------
 @media (min-width: $desktop-width) {
-  .addition-goods__title {
-    width: 1220px;
+  .addition-goods {
+    padding: 0 0 19px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .addition-goods__list {
+    margin: 0 auto 0 0;
   }
 
   .addition-goods__item {
     width: 895px;
   }
+
+  .addition-goods__title {
+    width: 1220px;
+    padding: 0 0 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -110px;
+      width: 70px;
+    }
+
+    &::after {
+      right: -110px;
+      width: 960px;
+    }
+  }
 }
+//------------------------------------------------------------------------------

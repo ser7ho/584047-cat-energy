@@ -2,13 +2,24 @@
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    margin: 0 0 0 auto;
+//---mobile-only----------------------------------------------------------------
+@media (max-width: $mobile-width-only) {
+  .menu-button + .main-nav {
+    display: none;
   }
 
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
+  .menu-button--close + .main-nav,
+  .menu-button--nojs + .main-nav {
+    display: block;
   }
 }
+//------------------------------------------------------------------------------
+
+//---tablet---------------------------------------------------------------------
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex: auto;
+    margin: 0 0 0 auto;
+  }
+}
+//------------------------------------------------------------------------------

@@ -1,21 +1,40 @@
+.goods {
+  margin: 30px auto 0;
+  width: 320px;
+}
+
 .goods__list {
   @include resetList;
 }
 
+//---tablet---------------------------------------------------------------------
 @media (min-width: $tablet-width) {
+  .goods {
+    width: 708px;
+    margin: 0 auto;
+  }
+
   .goods__list {
+    padding: 0 0 65px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .goods__item {
-    width: 324px;
+    margin: 140px 0 0;
   }
 }
+//------------------------------------------------------------------------------
 
-@media (min-width: $tablet-width) {
-  .goods__item {
-    width: 245px;
+//---desktop--------------------------------------------------------------------
+@media (min-width: $desktop-width) {
+  .goods {
+    width: 1220px;
+  }
+
+  .goods__list {
+    padding: 0 0 73px;
   }
 }
+//------------------------------------------------------------------------------
