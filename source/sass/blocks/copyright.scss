@@ -1,10 +1,32 @@
+.copyright:active {
+  opacity: 0.3;
+}
+
+.copyright:hover .copyright__logo {
+  fill: #68b738;
+}
+
 .copyright__logo {
   display: block;
-  width: 27px;
-  height: 34px;
-  background: url("../img/htmlacademy.svg") no-repeat 0 0;
+  fill: #666666;
 }
 
 .copyright__text {
   @include text(16px, 16px);
 }
+
+.copyright__link {
+  width: 280px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//---desktop--------------------------------------------------------------------
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    width: 162px;
+  }
+}
+//------------------------------------------------------------------------------

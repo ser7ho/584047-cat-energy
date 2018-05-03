@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -304,22 +305,47 @@
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li><a class="social__button social__button--vk" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social__button social__button--insta" href="#" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
-          <li><a class="social__button social__button--fb" href="#" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li>
+            <a class="social__button" href="#" target="_blank">
+              <svg class="social__icon social__icon--vk" width="22" height="12">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__button" href="#" target="_blank">
+              <svg class="social__icon social__icon--insta" width="16" height="16">
+                <use xlink:href="img/sprite.svg#insta"></use>
+              </svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__button" href="#" target="_blank">
+              <svg class="social__icon social__icon--fb" width="10" height="19">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Переход на сайт в HTML Academy">
           <p class="copyright__text">HTML Academy:</p>
+          <svg class="svg-icon copyright__logo" width="27" height="34" role="img">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
-        <a class="copyright__link copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
 
   </footer>
 
   <script src="js/scripts.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
 </body>
 
 </html>
