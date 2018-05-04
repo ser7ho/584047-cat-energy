@@ -52,18 +52,8 @@
 
   &--comment {
     height: 150px;
-    padding: 13px;
+    padding: 20px;
     margin: 0 0 28px;
-  }
-
-  &--email {
-    background: url("../img/icon-mail.svg") no-repeat right 15px top 50%;
-    background-size: 17px 13px;
-  }
-
-  &--phone-number {
-    background: url("../img/icon-phone.svg") no-repeat right 10px top 50%;
-    background-size: 20px 20px;
   }
 
   &:hover {
@@ -76,6 +66,28 @@
 
   &:invalid {
     border: 2px solid #ff8282;
+  }
+}
+
+.main-form__input:focus + .main-form__icon {
+  fill: $mainColor;
+}
+
+.main-form__input:invalid + .main-form__icon {
+  fill: #ff8282;
+}
+
+.main-form__icon {
+  position: absolute;
+
+  &--email {
+    top: 20px;
+    right: 16px;
+  }
+
+  &--phone {
+    top: 20px;
+    right: 13px;
   }
 }
 
@@ -164,6 +176,7 @@
 }
 
 .main-form__item {
+  position: relative;
   padding: 0 0 14px;
   display: flex;
   justify-content: space-between;
