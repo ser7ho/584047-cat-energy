@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -78,14 +78,14 @@
                 <label class="main-form__label" for="main-form__email">e-mail:<sup>*</sup></label>
                 <input class="main-form__input main-form__input--email" type="email" name="main-form__email" id="main-form__email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required>
                 <svg class="main-form__icon main-form__icon--email" width="17" height="13">
-                  <use xlink:href="img/sprite.svg#mail"></use>
+                  <use xlink:href="img/sprite.svg#svgs-icon-mail"></use>
                 </svg>
               </li>
               <li class="main-form__item">
                 <label class="main-form__label" for="main-form__phone-number">Телефон:<sup>*</sup></label>
                 <input class="main-form__input main-form__input--phone-number" type="tel" name="main-form__phone-number" id="main-form__phone-number" value="8(960)900-60-90" placeholder="8(960)900-60-90" required>
                 <svg class="main-form__icon main-form__icon--phone" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#phone"></use>
+                  <use xlink:href="img/sprite.svg#svgs-icon-phone"></use>
                 </svg>
               </li>
             </ul>
@@ -148,7 +148,7 @@
           <li>
             <a class="social__button" href="#" target="_blank">
               <svg class="social__icon social__icon--vk" width="22" height="12">
-                <use xlink:href="img/sprite.svg#vk"></use>
+                <use xlink:href="img/sprite.svg#svgs-icon-vk"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
@@ -156,7 +156,7 @@
           <li>
             <a class="social__button" href="#" target="_blank">
               <svg class="social__icon social__icon--insta" width="16" height="16">
-                <use xlink:href="img/sprite.svg#insta"></use>
+                <use xlink:href="img/sprite.svg#svgs-icon-insta"></use>
               </svg>
               <span class="visually-hidden">Инстаграм</span>
             </a>
@@ -164,7 +164,7 @@
           <li>
             <a class="social__button" href="#" target="_blank">
               <svg class="social__icon social__icon--fb" width="10" height="19">
-                <use xlink:href="img/sprite.svg#fb"></use>
+                <use xlink:href="img/sprite.svg#svgs-icon-fb"></use>
               </svg>
               <span class="visually-hidden">Фейсбук</span>
             </a>
@@ -175,7 +175,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Переход на сайт в HTML Academy">
           <p class="copyright__text">HTML Academy:</p>
           <svg class="svg-icon copyright__logo" width="27" height="34" role="img">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#svgs-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -183,8 +183,9 @@
 
   </footer>
 
-  <script src="js/scripts.js"></script>
-  <script src="js/svg4everybody.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script  src="js/picturefill.min.js"></script>
   <script>svg4everybody();</script>
 </body>
 
