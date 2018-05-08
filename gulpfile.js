@@ -16,13 +16,14 @@ var run = require("run-sequence");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
 var cheerio = require("gulp-cheerio");
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
-    "images",
     "webp",
+    "images",
     "style",
     "sprite",
     "js",
@@ -38,7 +39,8 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**"
+    "source/js/**/*.js",
+    "source/img/**/*.{png,jpg,svg}"
     ], {
     base: "source"
     })
@@ -92,6 +94,7 @@ gulp.task("webp", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
