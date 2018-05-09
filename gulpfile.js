@@ -94,7 +94,9 @@ gulp.task("webp", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
     .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(rename({suffix:'.min'}))
     .pipe(gulp.dest("build"));
 });
 
