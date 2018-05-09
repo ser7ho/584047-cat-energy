@@ -20,6 +20,7 @@
 
 .page-header__logo {
   padding: 11px 0 15px;
+  position: relative;
 
   &:hover {
     opacity: 0.8;
@@ -27,6 +28,15 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 

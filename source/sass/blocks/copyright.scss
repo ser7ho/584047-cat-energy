@@ -1,6 +1,3 @@
-.copyright:active {
-  opacity: 0.3;
-}
 
 .copyright:hover .copyright__logo {
   fill: #68b738;
@@ -16,11 +13,25 @@
 }
 
 .copyright__link {
+  position: relative;
   width: 280px;
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 //---desktop--------------------------------------------------------------------

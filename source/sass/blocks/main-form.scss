@@ -36,6 +36,21 @@
   &--option {
     padding: 0 0 0 45px;
     display: block;
+    position: relative;
+    cursor: pointer;
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
   }
 }
 
@@ -88,7 +103,7 @@
   }
 
   &--phone {
-    top: 20px;
+    top: 15px;
     right: 13px;
   }
 }
@@ -152,11 +167,6 @@
 
   &:hover .main-form__label::before {
     border-color: #bababa;
-  }
-
-  &:active .main-form__label {
-    border-color: #bababa;
-    opacity: 0.3;
   }
 }
 
